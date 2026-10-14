@@ -252,6 +252,17 @@ export function VideoPlayer({ channel }: { channel: Channel }) {
                 <button type="button" className="btn btn--primary" data-focusable onClick={() => setRetryKey((k) => k + 1)}>
                   <RetryIcon width={18} height={18} /> RETRY
                 </button>
+                {channel.name.toLowerCase().includes("rcti") && (
+                  <a
+                    className="btn btn--ghost"
+                    data-focusable
+                    href="https://www.rctiplus.com/tv/rcti"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WATCH ON RCTI+
+                  </a>
+                )}
                 <button type="button" className="btn btn--ghost" data-focusable onClick={openChannelCenter}>
                   CHOOSE ANOTHER
                 </button>

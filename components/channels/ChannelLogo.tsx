@@ -1,20 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import { initials } from "@/lib/utils";
 
-export function ChannelLogo({ name, logo, size = "md" }: { name: string; logo?: string; size?: "sm" | "md" | "lg" }) {
-  const [failed, setFailed] = useState(false);
+/**
+ * Deliberately render a local initials badge instead of remote playlist logos.
+ * Third-party logo hosts frequently return 404/connection-refused and create
+ * console noise; the app should remain stable when a logo host is unavailable.
+ */
+export function ChannelLogo({ name, size = "md" }: { name: string; logo?: string; size?: "sm" | "md" | "lg" }) {
   return (
-    <span className={`logo logo--${size}`}>
-      {logo && !failed ? (
-        // eslint-disable-next-line @next/next/no-img-element -- remote playlist logos, arbitrary hosts
-        <img src={logo} alt="" loading="lazy" decoding="async" referrerPolicy="no-referrer" onError={() => setFailed(true)} />
-      ) : (
-        <span className="logo__fallback" aria-hidden="true">
-          {initials(name)}
-        </span>
-      )}
+    <span className={`logo logo--${size}`} aria-label={`Logo ${name}`} title={name}>
+      <span className="logo__fallback" aria-hidden="true">{initials(name)}</span>
     </span>
   );
 }
