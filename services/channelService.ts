@@ -53,21 +53,11 @@ export async function loadCatalog(): Promise<ChannelCatalog> {
   const { text, source, probe } = await fetchPlaylist(cfg.playlistUrl, cfg.playlistUrl);
   const parsed = parseM3U(text);
   if (parsed.length === 0) throw new Error("The playlist contains no playable channels.");
-  // Merge probe health, then sort OK first / unknown+timeout / dead+blocked+unsupported last (nothing removed).
-  // Only expose streams confirmed reachable by the bundled probe and served
-  // over HTTPS. HTTP streams trigger Mixed Content errors on the HTTPS site;
-  // unknown/time-out/dead endpoints can generate repeated network/404 errors.
-  // Do not make exceptions for RCTI or any other channel: the player needs a
-  // real HLS URL, not an official HTML page. Use the official app/site separately.
-  const playableCandidates = mergeProbe(parsed, probe).filter((c) => {
-    try {
-      if (new URL(c.streamUrl).protocol !== "https:") return false;
-    } catch {
-      return false;
-    }
-    return c.health === "ok" && c.probe?.httpStatus === 200 && c.probe.corsFlag === "allowed";
-  });
-  const channels = sortByHealth(applyAdminConfig(playableCandidates, cfg));
+  // Keep every parsed playlist channel in the catalog/search, regardless of
+  // probe status or HTTP/HTTPS. A failed probe must not make a national channel
+  // disappear from search. The player/browser may still be unable to play an
+  // HTTP stream on an HTTPS page; health flags communicate availability.
+  const channels = sortByHealth(applyAdminConfig(mergeProbe(parsed, probe), cfg));
   const present = new Set(channels.map((c) => c.category));
   const categories = buildCategories(present, cfg.categoryOrder, cfg.disabledCategories);
 

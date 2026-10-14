@@ -15,7 +15,7 @@ interface Props {
  * Generic, config-driven ad slot.
  * - Fixed-size box (width/height from config.ts) => no layout shift.
  * - No code configured => labelled placeholder (or nothing when showPlaceholders=false).
- * - Code configured => rendered inside a sandboxed iframe (scripts + popups on user click only).
+ * - Code configured => rendered inside an isolated sandboxed iframe.
  *   The iframe isolates ad scripts from the app and the video player; we never auto-click.
  * - Never rendered inside/over the player; overlay variant is a small dismissible corner card.
  */
@@ -53,7 +53,7 @@ export function AdSlot({ slot, className }: Props) {
             height={cfg.height}
             loading="lazy"
             scrolling="no"
-            sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
             referrerPolicy="no-referrer-when-downgrade"
           />
         ) : (

@@ -1,51 +1,34 @@
 import type { AdConfig } from "@/types";
 
-/**
- * ADSTERRA DISPLAY SLOT CONFIGURATION
- * -----------------------------------
- * Adsterra display banner snippets can be configured in the matching `code`
- * strings below. Monetag tags are loaded separately by MonetagLoader.tsx.
- * Keep both integrations separate; do not duplicate Monetag tags in these slots.
- *
- * Empty code strings render a placeholder (or nothing if showPlaceholders=false).
- *
- * Banner sizes must match the size you chose in Adsterra:
- *   top / bottom: 728x90 (collapses to a scaled slot on small screens)
- *   sidebar:      300x250
- *   overlay:      300x250 (small dismissible card in the page corner, off by default)
- *
- * Env switches (optional):
- *   NEXT_PUBLIC_ADS_ENABLED=true|false          master switch (default: true)
- *   NEXT_PUBLIC_ADS_PLACEHOLDERS=true|false     show placeholders when no code (default: true)
- */
 const flag = (v: string | undefined, fallback: boolean) =>
   v === undefined || v === "" ? fallback : v.toLowerCase() === "true";
 
+/** Adsterra publisher snippets. Each slot is isolated in its own iframe by AdSlot. */
 export const adConfig: AdConfig = {
   enabled: flag(process.env.NEXT_PUBLIC_ADS_ENABLED, true),
   showPlaceholders: flag(process.env.NEXT_PUBLIC_ADS_PLACEHOLDERS, true),
   top: {
     enabled: true,
-    code: ``, // <- optional Adsterra 728x90 snippet
-    width: 728,
-    height: 90,
+    code: `<script>var atOptions = { key: '2b3a2868c6f8c4600f7b5ca598087510', format: 'iframe', height: 60, width: 468, params: {} };</script><script src="https://czernik.org/22/2b3a2868c6f8c4600f7b5ca598087510"></script>`,
+    width: 468,
+    height: 60,
   },
   bottom: {
     enabled: true,
-    code: ``, // <- optional Adsterra 728x90 snippet
-    width: 728,
-    height: 90,
+    code: `<script>var atOptions = { key: '68ae66bf3e16d1f71469d579bb99b716', format: 'iframe', height: 250, width: 300, params: {} };</script><script src="https://czernik.org/22/68ae66bf3e16d1f71469d579bb99b716"></script>`,
+    width: 300,
+    height: 250,
   },
   sidebar: {
     enabled: true,
-    code: ``, // <- optional Adsterra 300x250 snippet
-    width: 300,
-    height: 250,
+    code: `<script>var atOptions = { key: 'c8899a337b34bd1d9ff9ccac17f22eff', format: 'iframe', height: 600, width: 160, params: {} };</script><script src="https://czernik.org/22/c8899a337b34bd1d9ff9ccac17f22eff"></script>`,
+    width: 160,
+    height: 600,
   },
   overlay: {
-    enabled: false, // only enable if your Adsterra account/policies permit overlay formats
-    code: ``,
-    width: 300,
-    height: 250,
+    enabled: false,
+    code: `<script>var atOptions = { key: 'af119e595f71c936e670f2bc240bdfae', format: 'iframe', height: 300, width: 160, params: {} };</script><script src="https://czernik.org/22/af119e595f71c936e670f2bc240bdfae"></script>`,
+    width: 160,
+    height: 300,
   },
 };
