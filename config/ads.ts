@@ -1,9 +1,9 @@
 import type { AdConfig } from "@/types";
 
 /**
- * ADSTERRA CONFIGURATION
+ * OPTIONAL DISPLAY AD SLOT CONFIGURATION
  * ----------------------
- * Paste the snippet Adsterra gives you into the matching `code` string below
+ * Monetag tags are loaded separately by components/ads/MonetagLoader.tsx. Do not paste the same tags here. If you later configure standard display banners, paste the snippet your provider gives you into the matching `code` string below
  * (use a template literal so multi-line snippets work). Leave it empty and the
  * slot renders a fixed-size placeholder (or nothing if showPlaceholders=false).
  *

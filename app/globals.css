@@ -291,3 +291,37 @@ img, video, svg { max-width: 100%; }
 .health--flag { color: #ff7a8a; background: rgba(255, 77, 94, 0.12); border-color: rgba(255, 77, 94, 0.45); }
 .health--warn { color: #ffc15a; background: rgba(255, 193, 90, 0.1); border-color: rgba(255, 193, 90, 0.4); }
 .card--flagged .logo { opacity: 0.7; }
+
+
+/* Clearly labeled Monetag direct-link placement */
+.monetag-direct-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.75rem auto 0;
+  padding: 0.65rem 1rem;
+  max-width: min(100% - 2rem, 72rem);
+  border: 1px solid rgba(90, 155, 255, 0.22);
+  border-radius: 0.85rem;
+  background: linear-gradient(110deg, rgba(21, 43, 77, 0.72), rgba(8, 13, 24, 0.92));
+  color: #cbd5e1;
+  font-size: 0.82rem;
+}
+.monetag-direct-link__label {
+  color: #8ebaff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.monetag-direct-link a {
+  color: #f8fafc;
+  font-weight: 650;
+  text-decoration: none;
+}
+.monetag-direct-link a:hover,
+.monetag-direct-link a:focus-visible {
+  color: #8ebaff;
+  text-decoration: underline;
+}

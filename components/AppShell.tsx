@@ -12,6 +12,7 @@ import { CatalogView } from "@/components/views/CatalogView";
 import { SettingsView } from "@/components/views/SettingsView";
 import { ChannelCenter } from "@/components/channels/ChannelCenter";
 import { Toasts } from "@/components/ui/Toasts";
+import { MonetagDirectLink } from "@/components/ads/MonetagLoader";
 import { SITE } from "@/config/site";
 import { dur, ease } from "@/lib/motion";
 
@@ -45,6 +46,7 @@ function Shell() {
     <MotionConfig reducedMotion={off ? "always" : "never"}>
       <a className="skip" href="#main">Skip to content</a>
       <Header />
+      <MonetagDirectLink />
       <main id="main" className="main" tabIndex={-1}>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div key={view} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: dur.base, ease }}>
