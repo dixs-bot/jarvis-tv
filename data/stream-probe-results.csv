@@ -1,0 +1,179 @@
+channel,stream_url,method,http_status,content_type,response_time_ms,starts_with_EXTM3U,classification,acao_header,cors_flag,note
+AFBTV Kupang (1080p) [Not 24/7],https://afbtv.siar.us/live/afbtv.m3u8,HEAD→GET,,,49,False,dead,,n/a,conn: gaierror: [Errno -2] Name or service not known
+Ahsan TV,https://5bf7b725107e5.streamlock.net/ahsantv/ahsantv/playlist.m3u8,HEAD→GET,404,,1212,False,dead,*,allowed,HTTP 404
+Ajwa TV (1080p),http://ikitv.sqn.at:8000/play/a00j/index.m3u8,HEAD→GET,,,10041,False,timeout,,n/a,timeout: TimeoutError: timed out
+AKTV (1080p) [Not 24/7],https://akativi.siar.us/live/akativi.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,733,True,OK,*,allowed,
+Al Wafa Tarim (720p),https://ammedia.siar.us/ammedia/live/playlist.m3u8,HEAD→GET,200,text/plain,700,True,OK,*,allowed,
+Al-Bahjah TV (1080p),http://202.150.161.117:8000/play/AlBahjahTV,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Al-Iman TV (Indonesia) (720p),https://tv.aliman.id/aliman/live.m3u8,HEAD→GET,404,text/html,707,False,dead,*,allowed,HTTP 404
+Angel TV Indonesia (720p),https://janya-digimix.akamaized.net/vglive-sk-234616/indonesia/ngrp:angelindonesia_all/playlist.m3u8,HEAD→GET,200,application/x-mpegURL,590,True,OK,*,allowed,
+ANTV (Indonesia) (720p),http://103.58.160.157:8278/720-ANTV/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Ashiil TV (480p),https://wahyu1ptv.pages.dev/AshiilTV-HD.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1000,True,OK,*,allowed,
+Astha TV (1080p) [Not 24/7],https://hgmtv.com:19360/asthatv/asthatv.m3u8,HEAD→GET,,,10030,False,timeout,,n/a,timeout: TimeoutError: timed out
+Astro Blitar TV (720p),https://5bf7b725107e5.streamlock.net/abtv/abtv/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1165,True,OK,*,allowed,
+Atambua TV (720p),http://122.248.43.242:1935/ATAMBUATV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10008,False,timeout,,n/a,timeout: TimeoutError: timed out
+Balikpapan TV (720p),http://122.248.43.242:1935/BALIKPAPANTV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10008,False,timeout,,n/a,timeout: TimeoutError: timed out
+Bandung TV (360p),http://202.150.153.254:65500/bandungtvWEBSITE.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Banjar TV (720p) [Not 24/7],https://banjartv.siar.us/banjartv/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,737,True,OK,*,allowed,
+Banten TV (720p) [Not 24/7],https://5bf7b725107e5.streamlock.net/bantentv/bantentv/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1224,True,OK,*,allowed,
+Batam TV (480p) [Not 24/7],http://122.248.43.242:1935/BATAMTV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+BeritaSatu (1080p),https://xtdslboppkkv-pull.bpmedialive.com/live/beritasatu/abr.m3u8,HEAD→GET,,,29,False,dead,,n/a,conn: gaierror: [Errno -2] Name or service not known
+Biznet Adventure (1080p),http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.m3u8,HEAD→GET,,,10019,False,timeout,,n/a,timeout: TimeoutError: timed out
+Biznet Kids (1080p),http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/index.m3u8,HEAD→GET,,,10011,False,timeout,,n/a,timeout: TimeoutError: timed out
+Biznet Lifestyle (1080p),http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/index.m3u8,HEAD→GET,,,10020,False,timeout,,n/a,timeout: TimeoutError: timed out
+BMS TV (720p) [Not 24/7],https://5bf7b725107e5.streamlock.net/bmstv/bmstv/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1216,True,OK,*,allowed,
+BN Channel (1080p),http://ikitv.sqn.at:8000/play/a01l/index.m3u8,HEAD→GET,,,10020,False,timeout,,n/a,timeout: TimeoutError: timed out
+BRTV (Indonesia) (720p),https://5bf7b725107e5.streamlock.net/brtv/brtv/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1224,True,OK,*,allowed,
+BTV (Indonesia) [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h129/S4/mnf.m3u8,HEAD→GET,,,9,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+Bungo TV (480p) [Not 24/7],https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1212,True,OK,*,allowed,
+Caruban TV (1080p),https://stream.carubantv.id/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,718,True,OK,*,allowed,
+Celebes TV [Not 24/7],https://ams.juraganstreaming.com:5443/LiveApp/streams/celebesmedia.m3u8,HEAD→GET,,,9,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+Channel Jowo [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h77/index.m3u8,HEAD→GET,,,20,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+CNBC Indonesia,https://video.detik.com/livecnbc/smil:cnbctv/chunklist_w1279679883_b384000_sleng.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,717,True,OK,*,allowed,
+CNN Indonesia,https://video.detik.com/livecnn/smil:cnntv/chunklist_w268557525_b384000_sleng.m3u8,HEAD,200,application/vnd.apple.mpegurl,1103,False,unsupported,*,allowed,body does not start with #EXTM3U
+DAAI TV,https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8,HEAD→GET,200,application/x-mpegurl,679,True,OK,*,allowed,
+Davika TV (480p),https://5bf7b725107e5.streamlock.net/davika/davika/playlist.m3u8,HEAD→GET,404,,1214,False,dead,*,allowed,HTTP 404
+Dens Food Channel [Not 24/7],https://op-flashcon-digdayahd-1.dens.tv/h/h221/02.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1638,True,OK,*,allowed,
+Dens Knowledge [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h236/index.m3u8,HEAD→GET,,,29,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+Dens Life & Style [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h222/index.m3u8,HEAD→GET,,,32,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+Dens Play [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h225/index.m3u8,HEAD→GET,,,8,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+Dens ShowBiz [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h203/index.m3u8,HEAD→GET,,,28,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+Dhamma TV (720p) [Not 24/7],https://b.webcache.maxindo.net.id/dhamma/dhamma.m3u8,HEAD→GET,200,application/x-mpegURL,936,True,OK,*,allowed,
+Dhoho TV (720p),https://dhohotv.siar.us/dhohotv/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,739,True,OK,*,allowed,
+DMI TV (576i),https://tvstreamcast.com/tawaftv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1258,True,OK,*,allowed,
+dTVi,https://e.siar.us/live/dtvi.m3u8,HEAD→GET,404,text/html,738,False,dead,,missing,HTTP 404
+Duta TV (360p) [Not 24/7],https://dutatv.siar.us/dutatv/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,765,True,OK,*,allowed,
+Efarina TV (720p),https://live.efarinatv.com/hls/bgtaufikganteng.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,888,True,OK,*,allowed,
+Fajar TV (720p) [Not 24/7],http://122.248.43.242:1935/FAJARTV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10007,False,timeout,,n/a,timeout: TimeoutError: timed out
+Ficom Channel (720p),https://v3.siar.us/ficomchannel/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,717,True,OK,*,allowed,
+FTV (Taiwan) (720p) [Not 24/7],http://seb.sason.top/ptv/ftv.php?id=ms,HEAD→GET,,,181,False,dead,,n/a,conn: gaierror: [Errno -2] Name or service not known
+Garuda TV (1080p),https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8,HEAD→GET,,,10017,False,timeout,,n/a,timeout: TimeoutError: timed out
+Groovia Kanal (576p),https://gist.githubusercontent.com/iptvonlinetv/02d209207082846012c15305f7471c55/raw/4439b54b986e696e6fcfba7a53380d85b27bbbc1/udp450.500.723:6050.m3u8,HEAD→GET,200,text/plain; charset=utf-8,43,True,OK,*,allowed,
+Groovia Kids (576p),https://gist.githubusercontent.com/iptvonlinetv/244b66c61f162a7c0c2b4fa59b528139/raw/2376b7ba1989ebbd383301ec7d645e222a6c9338/udp780.510.345:4545.m3u8,HEAD→GET,200,text/plain; charset=utf-8,35,True,OK,*,allowed,
+GTV (Indonesia) HD (1080p),http://202.150.172.59/GTVHD/index.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Huma Betang TV (720p) [Not 24/7],https://v3.siar.us/humabetangtv/live/playlist.m3u8,HEAD→GET,404,text/html,713,False,dead,,missing,HTTP 404
+I Am Channel (576p),https://61146e7ab7a66.streamlock.net:8089/tes/1/chunklist.m3u8,HEAD→GET,,,10026,False,timeout,,n/a,timeout: TimeoutError: timed out
+Indonesiana.TV (720p),https://tvstreamcast.com/indonesiana.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,730,True,OK,*,allowed,
+Indosiar HD (1080p),http://202.150.172.59/Indosiar/index.m3u8,HEAD→GET,,,10008,False,timeout,,n/a,timeout: TimeoutError: timed out
+iNews HD (1080p),http://202.150.172.59/iNews/index.m3u8,HEAD→GET,,,10003,False,timeout,,n/a,timeout: TimeoutError: timed out
+Jak TV [Geo-blocked],https://op-group1-swiftservesd-1.dens.tv/s/s123/index2.m3u8,HEAD→GET,,,279,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+Jambi TV,https://jambitv.globaldigitalcore.com/hls/sah5tu7Eiveepohyieyie3OoteL2anga.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,755,True,OK,*,allowed,
+Jawa Pos TV Jakarta (720p),http://122.248.43.242:1935/JAWAPOSTVJKT/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Jek TV (720p) [Not 24/7],http://27.124.81.245:1935/jektv/myStream/playlist.m3u8,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+Jogja Istimewa TV (720p),http://103.255.15.222:1935/tv/jitv_720p/playlist.m3u8,HEAD→GET,,,10001,False,timeout,,n/a,timeout: TimeoutError: timed out
+Jogja TV (720p) [Not 24/7],https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,938,True,OK,*,allowed,
+JTV (720p),http://122.248.43.242:1935/JTVSURABAYA/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+JTV Kediri (1080p) [Not 24/7],http://122.248.43.242:1935/JTVKEDIRI/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+JTV Madiun,http://122.248.43.242:1935/JTVMADIUN/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+JTV Madura (480p) [Not 24/7],http://122.248.43.242:1935/JTVMADURA/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10008,False,timeout,,n/a,timeout: TimeoutError: timed out
+JTV Malang,http://122.248.43.242:1935/JTVMALANG/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Kawanua TV (720p),http://122.248.43.242:1935/KAWANUATV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+Kids TV,http://origin5.mediacdn.ru/live/kidstv/index.m3u8,HEAD→GET,,,10417,False,timeout,,n/a,timeout: TimeoutError: timed out
+Kilisuci TV,https://5bf7b725107e5.streamlock.net/kstv/kstv/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1212,True,OK,*,allowed,
+Kompas TV [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h234/index.m3u8,HEAD→GET,,,8,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+KTV (Indonesia) (720p),https://flv.intechmedia.net/live/ch118.m3u8,HEAD→GET,404,text/html,1845,False,dead,*,allowed,HTTP 404
+Lingkar TV,https://lingkartv.my.id/hls/lingkartv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1293,True,OK,*,allowed,
+Madani TV (720p),https://stream.asianastream.com/madani/madanitv.smil/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,2816,True,OK,*,allowed,
+Madu TV (1080p) [Not 24/7],https://re1.siar.us/madutv/hd720/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,738,True,OK,*,allowed,
+Magna Channel (1080p),http://202.150.172.59/MagnaChannel/index.m3u8,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+Matrix TV Yogyakarta (720p),https://stream.matrixtv.id/hls/0/stream.m3u8,HEAD→GET,,,70,False,dead,,n/a,conn: gaierror: [Errno -2] Name or service not known
+MBG TV (1080p),https://stream.convergen.co/mbg_stream/smil:mbStream.smil/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,721,True,OK,*,allowed,
+MDTV (1080p),https://wahyu1ptv.pages.dev/MDTV-HD.m3u8,HEAD→GET,404,,138,False,dead,*,allowed,HTTP 404
+Metro TV (Indonesia),https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1782,True,OK,*,allowed,
+MGI TV (720p) [Geo-blocked],https://tv.rodja.live/tasik/ngrp:mgitv_all/playlist.m3u8,HEAD→GET,,,10023,False,timeout,,n/a,timeout: TimeoutError: timed out
+MGSTV (360p) [Not 24/7],https://mgstv.siar.us/live/mgstv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,732,True,OK,*,allowed,
+MNCTV HD,http://202.150.172.59/MNCTV/tracks-v1a1/mono.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Moji [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8,HEAD→GET,,,261,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+MQTV (720p) [Not 24/7],https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1296,True,OK,*,allowed,
+Music Information Channel (720p),https://mic.siar.us/mic/live/mic.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,817,True,OK,*,allowed,
+My Cinema [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h192/index.m3u8,HEAD→GET,,,9,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+My Family [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h194/index.m3u8,HEAD→GET,,,24,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+My Kidz (720p),https://cdn10jtedge.indihometv.com/atm/DASH/mykids/manifest.mpd,HEAD→GET,403,text/html,1017,False,blocked,,missing,HTTP 403
+Naajiya TV (720p),https://www.naajiyatv.com/live/livestream.m3u8,HEAD→GET,200,text/html; charset=utf-8,172,False,unsupported,*,allowed,body does not start with #EXTM3U
+Nabawi TV (720p),http://202.150.161.117:8000/play/NabawiTV,HEAD→GET,,,10001,False,timeout,,n/a,timeout: TimeoutError: timed out
+Nusantara TV (1080p),https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,741,True,OK,*,allowed,
+Online TV Nusantara (720p) [Not 24/7],https://5bf7b725107e5.streamlock.net/onlinetvnusantara/onlinetvnusantara/playlist.m3u8,HEAD→GET,404,,1207,False,dead,,missing,HTTP 404
+Padang TV (720p) [Not 24/7],http://122.248.43.242:1935/PADANGTV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10008,False,timeout,,n/a,timeout: TimeoutError: timed out
+PKTV (480p),https://streaming.id18.tunnel.my.id/hls/stream.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,895,True,OK,*,allowed,
+PONTV (720p),http://122.248.43.242:1935/PONTV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10005,False,timeout,,n/a,timeout: TimeoutError: timed out
+Puja TV Aceh (1080p) [Not 24/7],https://pujatv.siar.us/live/pujatv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,762,True,OK,*,allowed,
+Radar Lampung TV (480p),https://www.streaming.radartv.co.id/hls/test.m3u8,HEAD,200,application/vnd.apple.mpegurl,823,False,unsupported,*,allowed,body does not start with #EXTM3U
+Radar Tasikmalaya TV (720p) [Not 24/7],https://v2.siar.us/radartasikmalaya/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,712,True,OK,*,allowed,
+RCTI HD (1080p),http://202.150.172.59/RCTIHD/index.m3u8,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+RCTV (Indonesia) (720p) [Not 24/7],https://v10.siar.us/rctv/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,732,True,OK,*,allowed,
+Riau TV (1080p) [Not 24/7],http://122.248.43.242:1935/RIAUTV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Rinjani TV,https://rinjanitv.cloud/hls/tvkabel.m3u8,HEAD→GET,404,text/html,733,False,dead,,missing,HTTP 404
+Rodja TV (720p),https://rodjatv.com/rodjatv/live.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,706,True,OK,*,allowed,
+RRI Net (1080p),https://private-streaming.rri.go.id/memfs/6f77c7b5-feb2-4935-9f89-e7e9fca0a54a_output_0.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,737,True,OK,*,allowed,
+RTM ASEAN,https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/chunklist_b2596000_slENG.m3u8,HEAD→GET,403,text/html,67,False,blocked,*,allowed,HTTP 403
+Salam TV (720p),https://live.salamtelevisi.com/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,776,True,OK,*,allowed,
+Salira TV (720p),https://live.salira.tv/p/3870/hybrid/play.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,929,True,OK,*,allowed,
+Sampit TV (720p) [Not 24/7],https://sampit-tv.siar.us/live/sampit-tv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,738,True,OK,*,allowed,
+Sangaji TV (720p),https://cdn.adyadigitalteknologi.com:8090/vod/relay.m3u8,HEAD→GET,,,10029,False,timeout,,n/a,timeout: TimeoutError: timed out
+SCTV,http://202.150.172.59/SCTV/tracks-v1a1/mono.m3u8,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+Selaparang TV (720p) [Not 24/7],https://selaparangtv.siar.us/live/selaparangtv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,760,True,OK,*,allowed,
+Semarang TV (720p),http://116.254.112.74/hls/cakralive.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Simpang5 TV (360p) [Not 24/7],http://122.248.43.242:1935/SIMPANG5TV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10002,False,timeout,,n/a,timeout: TimeoutError: timed out
+SMTV (720p),https://e.siar.us/live/smtv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,742,True,OK,*,allowed,
+SPOTV 2 (720p),http://58.8.186.128:10006/bysid/2630,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+SPOTV (720p),http://58.8.186.128:10006/bysid/2614,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+Sriwijaya TV (720p) [Not 24/7],https://sriwijayatv.siar.us/live/sriwijayatv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,749,True,OK,*,allowed,
+Stara TV (720p),https://stream.staratv.id/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,1074,True,OK,*,allowed,
+Stara TV Bandung (1080p),https://bandung.staratv.id/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,712,True,OK,*,allowed,
+Stara TV Bojonegoro (720p),https://bojonegoro.staratv.id/hls/stream.m3u8,HEAD→GET,200,application/x-mpegURL,1049,True,OK,*,allowed,
+Stara TV Cianjur (720p),https://cianjur.staratv.id/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,709,True,OK,*,allowed,
+Stara TV Jakarta (1080p),https://jakarta.staratv.id/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,705,True,OK,*,allowed,
+Stara TV Malang (1080p),https://malang.staratv.id/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,1099,True,OK,*,allowed,
+Stara TV Parahyangan (720p),https://parahyangan.staratv.id/hls/0/stream.m3u8,HEAD→GET,200,application/x-mpegURL,1053,True,OK,*,allowed,
+STV (Indonesia) (720p) [Not 24/7],http://122.248.43.242:1935/SAMARINDATV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10009,False,timeout,,n/a,timeout: TimeoutError: timed out
+Suara Surabaya Visual Radio (720p),https://ssfm.siar.us/ssfm/live/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,679,True,OK,*,allowed,
+Sultra TV (720p) [Not 24/7],http://122.248.43.242:1935/SULTRATV/_definst_/myStream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+Surau TV (720p),http://ikitv.sqn.at:8000/play/a00l/index.m3u8,HEAD→GET,,,10027,False,timeout,,n/a,timeout: TimeoutError: timed out
+TATV (720p) [Not 24/7],https://v2.siar.us/tatv/live.sdp/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,719,True,OK,*,allowed,
+Tegar TV Lampung (480p),http://wms.klikhost.com:1935/tegartv/tegartv/playlist.m3u8,HEAD→GET,,,10108,False,timeout,,n/a,timeout: TimeoutError: timed out
+The Indonesia Channel (1080p),https://restreamer.indonusa.id:8443/d5f4ad43-1b5a-4b0f-8bef-5b37224ed221.m3u8,HEAD→GET,,,10266,False,timeout,,n/a,timeout: TimeoutError: timed out
+TV 9 Nusantara (720p),https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1219,True,OK,*,allowed,
+TV Mu (720p) [Not 24/7],https://e.siar.us/live/tvmu.m3u8,HEAD→GET,404,text/html,751,False,dead,,missing,HTTP 404
+TV Tabalong (720p) [Not 24/7],https://5bf7b725107e5.streamlock.net/tvtabalong/tvtabalong/playlist.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1308,True,OK,*,allowed,
+TVKU (720p),https://tvku.tv/hlsstream/hls/live.m3u8,HEAD→GET,404,text/html,747,False,dead,,missing,HTTP 404
+tvN Asia HD (720p),http://58.8.186.128:10005/bysid/2518,HEAD→GET,,,10008,False,timeout,,n/a,timeout: TimeoutError: timed out
+tvOne [Geo-blocked],https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8,HEAD→GET,,,263,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+TVR Parlemen (720p) [Not 24/7],http://103.18.181.69:1935/golive/livestream/playlist.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+TVRI (480p) [Geo-blocked],https://op-group1-swiftservesd-1.dens.tv/s/s11/index.m3u8,HEAD→GET,,,365,False,dead,,n/a,conn: gaierror: [Errno -5] No address associated with hostname
+TVRI Aceh (720p),https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,531,True,OK,*,allowed,
+TVRI Bali (480p),https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,539,True,OK,*,allowed,
+TVRI Bangka Belitung (480p),https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,558,True,OK,*,allowed,
+TVRI Bengkulu (480p),https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,564,True,OK,*,allowed,
+TVRI Central Java (720p),https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,562,True,OK,*,allowed,
+TVRI Central Kalimantan (480p),https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,563,True,OK,*,allowed,
+TVRI Central Sulawesi (720p),https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,570,True,OK,*,allowed,
+TVRI East Java (720p),https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,535,True,OK,*,allowed,
+TVRI East Kalimantan (720p),https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,536,True,OK,*,allowed,
+TVRI East Nusa Tenggara (480p),https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,570,True,OK,*,allowed,
+TVRI Gorontalo (480p),https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,532,True,OK,*,allowed,
+TVRI HD (1080i),https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,565,True,OK,*,allowed,
+TVRI Jakarta (576i) [Not 24/7],https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,294,True,OK,*,allowed,
+TVRI Jambi (720p) [Not 24/7],https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,584,True,OK,*,allowed,
+TVRI Lampung (720p),https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,559,True,OK,*,allowed,
+TVRI Maluku (480p),https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,532,True,OK,*,allowed,
+TVRI North Sulawesi (1080p),https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,552,True,OK,*,allowed,
+TVRI North Sumatra (1080p),https://ott-balancer.tvri.go.id/live/eds/Sumut/hls/Sumut.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,620,True,OK,*,allowed,
+TVRI Papua (480p),https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,551,True,OK,*,allowed,
+TVRI Riau (720p) [Not 24/7],https://ott-balancer.tvri.go.id/live/eds/Riau/hls/Riau.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,575,True,OK,*,allowed,
+TVRI South Kalimantan (720p),https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,531,True,OK,*,allowed,
+TVRI South Sulawesi (480p),https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,548,True,OK,*,allowed,
+TVRI South Sumatra (480p),https://ott-balancer.tvri.go.id/live/eds/Sumsel/hls/Sumsel.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,536,True,OK,*,allowed,
+TVRI Southeast Sulawesi (480p),https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,303,True,OK,*,allowed,
+TVRI West Java (480p),https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,529,True,OK,*,allowed,
+TVRI West Kalimantan (480p),https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,555,True,OK,*,allowed,
+TVRI West Nusa Tenggara (720p),https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,302,True,OK,*,allowed,
+TVRI West Papua (1080p),https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,549,True,OK,*,allowed,
+TVRI West Sulawesi (720p),https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,535,True,OK,*,allowed,
+TVRI West Sumatra (720p),https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,530,True,OK,*,allowed,
+TVRI Yogyakarta (720p),https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,298,True,OK,*,allowed,
+TVRI Sport (1080p),http://202.150.172.59/TVRISport/index.m3u8,HEAD→GET,,,10010,False,timeout,,n/a,timeout: TimeoutError: timed out
+TVRI World (1080p),https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,546,True,OK,*,allowed,
+U Channel,https://srs.u-channel.tv/live/uchannel-tv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,449,True,OK,*,allowed,
+UGTV (720p),https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,1131,True,OK,*,allowed,
+VTV (Indonesia) (720p),https://flv.intechmedia.net/live/ch107.m3u8,HEAD→GET,200,application/vnd.apple.mpegurl,730,True,OK,*,allowed,
+VTV (Indonesia) HD (1080p),http://ikitv.sqn.at:8000/play/a023/index.m3u8,HEAD→GET,,,10024,False,timeout,,n/a,timeout: TimeoutError: timed out
