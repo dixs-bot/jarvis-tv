@@ -1,13 +1,13 @@
 import type { AdConfig } from "@/types";
 
 /**
- * OPTIONAL DISPLAY AD SLOT CONFIGURATION
- * ----------------------
- * Monetag tags are loaded separately by components/ads/MonetagLoader.tsx. Do not paste the same tags here. If you later configure standard display banners, paste the snippet your provider gives you into the matching `code` string below
- * (use a template literal so multi-line snippets work). Leave it empty and the
- * slot renders a fixed-size placeholder (or nothing if showPlaceholders=false).
+ * ADSTERRA DISPLAY SLOT CONFIGURATION
+ * -----------------------------------
+ * Adsterra display banner snippets can be configured in the matching `code`
+ * strings below. Monetag tags are loaded separately by MonetagLoader.tsx.
+ * Keep both integrations separate; do not duplicate Monetag tags in these slots.
  *
- * No ad code, keys or publisher ids are shipped with this project.
+ * Empty code strings render a placeholder (or nothing if showPlaceholders=false).
  *
  * Banner sizes must match the size you chose in Adsterra:
  *   top / bottom: 728x90 (collapses to a scaled slot on small screens)
@@ -26,19 +26,19 @@ export const adConfig: AdConfig = {
   showPlaceholders: flag(process.env.NEXT_PUBLIC_ADS_PLACEHOLDERS, true),
   top: {
     enabled: true,
-    code: ``, // <- paste Adsterra 728x90 banner snippet here
+    code: ``, // <- optional Adsterra 728x90 snippet
     width: 728,
     height: 90,
   },
   bottom: {
     enabled: true,
-    code: ``, // <- paste Adsterra 728x90 banner snippet here
+    code: ``, // <- optional Adsterra 728x90 snippet
     width: 728,
     height: 90,
   },
   sidebar: {
     enabled: true,
-    code: ``, // <- paste Adsterra 300x250 banner snippet here
+    code: ``, // <- optional Adsterra 300x250 snippet
     width: 300,
     height: 250,
   },
