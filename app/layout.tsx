@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   title: 'JARVIS TV - Live Streaming TV Indonesia',
   description: 'Streaming siaran televisi nasional dan hiburan terlengkap',
   // TAMBAHKAN KODE VERIFIKASI GOOGLE DI SINI:
-  verification: {
-    google: '6N-Mfe4cyHyY-Fl9Fo4-iOUfmIVjc_IebHSCy8PsuRA',
+ <meta name="google-site-verification" content="6N-Mfe4cyHyY-Fl9Fo4-iOUfmIVjc_IebHSCy8PsuRA" />,
   },
 };
 
