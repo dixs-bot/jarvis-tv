@@ -1,27 +1,28 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { MonetagLoader } from '@/components/ads/MonetagLoader';
-import { AdsterraScripts } from '@/components/ads/AdsterraScripts';
+import type { Metadata, Viewport } from "next";
+import type { ReactNode } from "react";
+import { SITE } from "@/config/site";
+import { AppProvider } from "@/context/AppContext";
+import { MonetagLoader } from "@/components/ads/MonetagLoader";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'JARVIS TV - Live Streaming TV Indonesia',
-  description: 'Streaming siaran televisi nasional dan hiburan terlengkap',
-  verification: {
-    google: '6N-Mfe4cyHyY-Fl9Fo4-iOUfmIVjc_IebHSCy8PsuRA',
-  },
+  title: `${SITE.name} — ${SITE.tagline}`,
+  description: SITE.description,
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const viewport: Viewport = {
+  themeColor: "#05070B",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="id">
-      <body className="bg-slate-950 text-slate-100 min-h-screen antialiased">
+    <html lang="en">
+      <body>
+        <AppProvider>{children}</AppProvider>
         <MonetagLoader />
-        <AdsterraScripts />
-        {children}
       </body>
     </html>
   );
