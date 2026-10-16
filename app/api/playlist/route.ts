@@ -14,9 +14,25 @@ export const dynamic = "force-dynamic";
  * Stream segments themselves are NOT proxied; the browser plays them directly.
  */
 async function getPlaylist(): Promise<{ text: string; source: PlaylistSource } | null> {
-  const url = PLAYLIST_URL || DEFAULT_PLAYLIST_URL;
+  // PLAYLIST_URL is server-only and takes precedence for private/authenticated sources.
+  // NEXT_PUBLIC_PLAYLIST_URL remains supported for public playlists.
+  const url = process.env.PLAYLIST_URL || PLAYLIST_URL || DEFAULT_PLAYLIST_URL;
+  const token = process.env.PLAYLIST_TOKEN;
+
   try {
-    const res = await fetch(url, { next: { revalidate: 1800 }, signal: AbortSignal.timeout(10000) });
+    const parsedUrl = new URL(url);
+    if (parsedUrl.protocol !== "https:" && parsedUrl.protocol !== "http:") {
+      throw new Error("Playlist URL must use HTTP or HTTPS");
+    }
+
+    const headers = new Headers({ Accept: "audio/x-mpegurl, application/vnd.apple.mpegurl, text/plain, */*" });
+    if (token) headers.set("Authorization", `Bearer ${token}`);
+
+    const res = await fetch(url, {
+      headers,
+      ...(token ? { cache: "no-store" as const } : { next: { revalidate: 1800 } }),
+      signal: AbortSignal.timeout(10000),
+    });
     if (res.ok) {
       const text = await res.text();
       if (text.includes("#EXTINF")) return { text, source: "live" };
@@ -37,7 +53,10 @@ export async function GET(req: Request) {
   const pl = await getPlaylist();
   if (!pl) return new Response("Could not reach playlist source and no snapshot is available", { status: 502 });
   const asJson = new URL(req.url).searchParams.get("format") === "json";
-  const cache = "public, max-age=300, s-maxage=1800";
+  // Never publicly cache a playlist fetched with a secret token.
+  const cache = process.env.PLAYLIST_TOKEN
+    ? "private, no-store"
+    : "public, max-age=300, s-maxage=1800";
   if (asJson) {
     return Response.json(
       { source: pl.source, playlist: pl.text, probe: probeData as unknown as ProbeData },

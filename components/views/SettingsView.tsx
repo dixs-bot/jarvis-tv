@@ -81,7 +81,7 @@ export function SettingsView() {
           <dt>Config source</dt><dd>{catalog?.configSource === "static-defaults" ? "Static defaults (no server persistence)" : catalog?.configSource ?? "—"}</dd>
           <dt>Ad slots enabled</dt><dd>{ads.length} ({adsWithCode} with code)</dd>
         </dl>
-        <p className="muted small">Change the playlist with NEXT_PUBLIC_PLAYLIST_URL. {SITE.name} reads the list live; it does not store it.</p>
+        <p className="muted small">Configure public playlists with NEXT_PUBLIC_PLAYLIST_URL, or use server-only PLAYLIST_URL and PLAYLIST_TOKEN for a Bearer-authenticated M3U endpoint. Restart the server after changes. {SITE.name} does not store your token.</p>
       </section>
 
       <section className="panel" aria-labelledby="s-data">
