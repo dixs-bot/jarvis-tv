@@ -53,11 +53,14 @@ export async function loadCatalog(): Promise<ChannelCatalog> {
   const { text, source, probe } = await fetchPlaylist(cfg.playlistUrl, cfg.playlistUrl);
   const parsed = parseM3U(text);
   if (parsed.length === 0) throw new Error("The playlist contains no playable channels.");
-  // Keep every parsed playlist channel in the catalog/search, regardless of
-  // probe status or HTTP/HTTPS. A failed probe must not make a national channel
-  // disappear from search. The player/browser may still be unable to play an
-  // HTTP stream on an HTTPS page; health flags communicate availability.
-  const channels = sortByHealth(applyAdminConfig(mergeProbe(parsed, probe), cfg));
+  // Hide streams already identified by the latest probe as unavailable or
+  // unsuitable for playback. Keep unknown channels because they may be new
+  // and have not been checked yet. Timeouts are filtered as likely unstable.
+  const probedChannels = mergeProbe(parsed, probe);
+  const playableCandidates = probedChannels.filter(
+    (channel) => !channel.health || channel.health === "ok" || channel.health === "unknown",
+  );
+  const channels = sortByHealth(applyAdminConfig(playableCandidates, cfg));
   const present = new Set(channels.map((c) => c.category));
   const categories = buildCategories(present, cfg.categoryOrder, cfg.disabledCategories);
 
