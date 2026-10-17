@@ -44,6 +44,10 @@ export function Header() {
               <span>{i.label}</span>
             </button>
           ))}
+        <a href="/mirror" className="nav__item" data-focusable aria-label="Open phone mirroring">
+          <span aria-hidden="true">▣</span>
+          <span>Phone Mirror</span>
+        </a>
         <button type="button" className="nav__item nav__item--cta" data-focusable onClick={openChannelCenter} aria-haspopup="dialog">
           <GridIcon width={18} height={18} />
           <span>All Channels</span>

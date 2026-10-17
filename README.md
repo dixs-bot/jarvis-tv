@@ -17,6 +17,13 @@ npm run dev
 
 Open <http://localhost:5173>. Restart the dev server after changing environment variables.
 
+
+## Phone Mirror (Android over Wi-Fi)
+
+The `/mirror` page can display a phone screen provided by a compatible local streaming app. For Android 9, install [ScreenStream](https://github.com/dkrivoruchko/ScreenStream), connect the phone and laptop to the same trusted Wi-Fi network, start **Local mode (MJPEG)**, then paste the URL shown by the phone into the Phone Mirror page. The page has a normal-page mode and an MJPEG endpoint mode.
+
+For local development, run `npm run dev` and open `http://<LAPTOP-IP>:5173/mirror` from the laptop browser. Allow Node.js through Windows Firewall on private networks if prompted. The local HTTP stream may be blocked when the app is opened from an HTTPS deployment (such as Vercel); a public HTTPS deployment needs a secure transport/relay rather than exposing a local HTTP URL. Local MJPEG is video-only and may be viewable by other devices on the same network, so use a trusted network, enable PIN protection where available, and stop streaming when finished.
+
 ## Configure a playlist
 
 ### Public M3U URL

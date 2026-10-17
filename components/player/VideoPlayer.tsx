@@ -272,6 +272,17 @@ export function VideoPlayer({ channel }: { channel: Channel }) {
                 <button type="button" className="btn btn--primary" data-focusable onClick={() => setRetryKey((k) => k + 1)}>
                   <RetryIcon width={18} height={18} /> RETRY
                 </button>
+                {channel.name.toLowerCase().includes("indosiar") && (
+                  <a
+                    className="btn btn--ghost"
+                    data-focusable
+                    href="https://www.vidio.com/live/205-indosiar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WATCH ON VIDIO
+                  </a>
+                )}
                 {channel.name.toLowerCase().includes("rcti") && (
                   <a
                     className="btn btn--ghost"

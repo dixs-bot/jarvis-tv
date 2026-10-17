@@ -3,6 +3,7 @@ import { mergeProbe, sortByHealth } from "@/lib/health";
 import { parseM3U } from "@/lib/m3u";
 import { buildCategories } from "@/lib/categories";
 import { getAdminService } from "@/services/adminService";
+import { PLAYLIST_URL } from "@/config/site";
 
 /** Applies admin rules (disable, ordering, featured) to raw playlist channels. */
 export function applyAdminConfig(raw: Channel[], cfg: AdminConfig): Channel[] {
@@ -29,9 +30,10 @@ interface PlaylistPayload {
   probe: ProbeData | null;
 }
 
-async function fetchPlaylist(playlistUrl: string, defaultUrl: string): Promise<PlaylistPayload> {
-  // Prefer the same-origin proxy (live first, saved snapshot fallback, probe data attached).
-  if (playlistUrl === defaultUrl) {
+async function fetchPlaylist(playlistUrl: string): Promise<PlaylistPayload> {
+  // Use the same-origin proxy for the configured site playlist. This keeps server-only
+  // playlist tokens off the client and enables the saved snapshot fallback.
+  if (playlistUrl === PLAYLIST_URL) {
     try {
       const res = await fetch("/api/playlist?format=json", { cache: "no-store" });
       if (res.ok) {
@@ -50,17 +52,14 @@ async function fetchPlaylist(playlistUrl: string, defaultUrl: string): Promise<P
 export async function loadCatalog(): Promise<ChannelCatalog> {
   const admin = getAdminService();
   const cfg = await admin.getConfig();
-  const { text, source, probe } = await fetchPlaylist(cfg.playlistUrl, cfg.playlistUrl);
+  const { text, source, probe } = await fetchPlaylist(cfg.playlistUrl);
   const parsed = parseM3U(text);
   if (parsed.length === 0) throw new Error("The playlist contains no playable channels.");
-  // Hide streams already identified by the latest probe as unavailable or
-  // unsuitable for playback. Keep unknown channels because they may be new
-  // and have not been checked yet. Timeouts are filtered as likely unstable.
-  const probedChannels = mergeProbe(parsed, probe);
-  const playableCandidates = probedChannels.filter(
-    (channel) => !channel.health || channel.health === "ok" || channel.health === "unknown",
-  );
-  const channels = sortByHealth(applyAdminConfig(playableCandidates, cfg));
+  // Keep every parsed playlist channel in the catalog/search, regardless of
+  // probe status or HTTP/HTTPS. A failed probe must not make a national channel
+  // disappear from search. The player/browser may still be unable to play an
+  // HTTP stream on an HTTPS page; health flags communicate availability.
+  const channels = sortByHealth(applyAdminConfig(mergeProbe(parsed, probe), cfg));
   const present = new Set(channels.map((c) => c.category));
   const categories = buildCategories(present, cfg.categoryOrder, cfg.disabledCategories);
 
